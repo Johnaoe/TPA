@@ -1,6 +1,6 @@
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import {Link as ScrollLink} from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 
 const childVariant = {
     hidden: { opacity: 0, scale: 0.9 },
@@ -29,9 +29,11 @@ const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {
             <h4 className="font-bold">{title}</h4>
             <p className="my-3">{description}</p>
             <ScrollLink
-                className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
-                onClick={() => setSelectedPage(SelectedPage.ContactUs)}
-                href={`#${SelectedPage.ContactUs}`}
+                to={SelectedPage.GetInvolved}
+                smooth={true}
+                duration={500}
+                className="text-sm font-bold text-primary-500 underline hover:text-secondary-500 cursor-pointer"
+                onClick={() => setSelectedPage(SelectedPage.GetInvolved)}
             >
                 <p>Learn More</p>
             </ScrollLink>

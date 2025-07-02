@@ -1,14 +1,14 @@
 import { useForm } from 'react-hook-form';
 import { SelectedPage } from '@/shared/types';
 import { motion } from 'framer-motion';
-import ContactUsPageGraphic from '@/assets/ContactUsPageGraphic.png';
+import ContactUsPageGraphic from '@/assets/ContactUsPageGraphics.jpg';
 import HText from '@/shared/HText';
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
 };
 
-const ContactUs = ({ setSelectedPage }: Props) => {
+const GetInvolved = ({ setSelectedPage }: Props) => {
     const inputStyles = `mb-5 w-full rounded-lg bg-primary-300
   px-5 py-3 placeholder-white`;
 
@@ -26,9 +26,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
     };
 
     return (
-        <section id="contactus" className="mx-auto w-5/6 pt-24 pb-32">
+        <section id="getinvolved" className="mx-auto w-5/6 pt-24 pb-32">
             <motion.div
-                onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
+                onViewportEnter={() => setSelectedPage(SelectedPage.GetInvolved)}
             >
                 {/* HEADER */}
                 <motion.div
@@ -43,12 +43,12 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                     }}
                 >
                     <HText>
-                        <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE
+                        <span className="text-primary-500">READY TO JOIN</span> OUR NEXT PROJECT?
                     </HText>
                     <p className="my-5">
-                        Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl
-                        sapien vel rhoncus. Placerat at in enim pellentesque. Nulla
-                        adipiscing leo egestas nisi elit risus sit. Nunc cursus sagittis.
+                        Whether you're interested in participating in our beach volleyball tournaments,
+                        helping organize events, or developing new Erasmus+ projects, we'd love to hear
+                        from you. Together, we can create more opportunities for young Europeans to connect and grow.
                     </p>
                 </motion.div>
 
@@ -145,11 +145,13 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                         }}
                     >
                         <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
-                            <img
-                                className="w-full"
-                                alt="contact-us-page-graphic"
-                                src={ContactUsPageGraphic}
-                            />
+                            <div className="w-full h-80 overflow-hidden">
+                                <img
+                                    className="w-full h-full object-cover object-[center_50%]"
+                                    alt="get-involved-page-graphic"
+                                    src={ContactUsPageGraphic}
+                                />
+                            </div>
                         </div>
                     </motion.div>
                 </div>
@@ -158,4 +160,4 @@ const ContactUs = ({ setSelectedPage }: Props) => {
     );
 };
 
-export default ContactUs;
+export default GetInvolved;

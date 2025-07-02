@@ -11,10 +11,10 @@ const ActionButton = ({ children, setSelectedPage }: Props) => {
     return (
         <ScrollLink
             className="rounded-md bg-secondary-500 px-10 py-2 hover:bg-primary-500 hover:text-white cursor-pointer"
-            to={SelectedPage.ContactUs}
+            to={SelectedPage.GetInvolved}
             smooth={true}
             duration={500}
-            onClick={() => setSelectedPage(SelectedPage.ContactUs)}
+            onClick={() => setSelectedPage(SelectedPage.GetInvolved)}
         >
             {children}
         </ScrollLink>

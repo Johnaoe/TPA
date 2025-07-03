@@ -14,7 +14,7 @@ const projects: Array<ClassType> = [
     {
         name: "Beach Volleyball Tournament",
         description:
-            "Annual international beach volleyball tournaments bringing together young athletes from across Europe. Participants compete, learn, and build lasting friendships while developing their skills and cultural awareness.",
+            "Annual international beach volleyball tournaments bringing together athletes from across Europe. Participants compete, learn, and build lasting friendships while developing their skills and cultural awareness.",
         image: image1,
     },
     {
@@ -68,7 +68,7 @@ const Projects = ({ setSelectedPage }: Props) => {
                         <HText>OUR PROJECTS</HText>
                         <p className="py-5">
                             From beach volleyball tournaments to cultural exchange programs, we're
-                            constantly developing new ways to bring young Europeans together. Each
+                            constantly developing new ways to bring Europeans together. Each
                             project combines sports, learning, and cultural exchange to create
                             unforgettable experiences.
                         </p>

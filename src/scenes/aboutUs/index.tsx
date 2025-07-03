@@ -15,7 +15,7 @@ const benefits: Array<BenefitType> = [
         icon: <UserGroupIcon className="h-6 w-6" />,
         title: "Connect Across Borders",
         description:
-            "Join a vibrant community of young Europeans. Build friendships and professional networks that span across multiple countries and cultures.",
+            "Join a vibrant community of Europeans. Build friendships and professional networks that span across multiple countries and cultures.",
     },
     {
         icon: <HomeModernIcon className="h-6 w-6" />,
@@ -62,7 +62,7 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                 >
                     <HText>MORE THAN JUST PROJECTS.</HText>
                     <p className="my-5 text-sm">
-                        We create meaningful connections between young people across Europe through
+                        We create meaningful connections between people across Europe through
                         innovative Erasmus+ projects. Our focus on sports and cultural activities
                         builds lasting friendships and develops essential life skills.
                     </p>
@@ -114,7 +114,7 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                                     }}
                                 >
                                     <HText>
-                                        HUNDREDS OF YOUNG PEOPLE GETTING{" "}
+                                        HUNDREDS OF PEOPLE GETTING{" "}
                                         <span className="text-primary-500">CONNECTED</span>
                                     </HText>
                                 </motion.div>
@@ -142,7 +142,7 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                                 Through our innovative approach to combining sports with cultural exchange,
                                 participants develop not just athletic skills, but also language abilities,
                                 cultural awareness, and leadership capabilities. Every event is designed to
-                                break down barriers and build bridges between young Europeans.
+                                break down barriers and build bridges between Europeans.
                             </p>
                         </motion.div>
 

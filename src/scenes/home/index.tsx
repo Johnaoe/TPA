@@ -40,12 +40,12 @@ const Home = ({ setSelectedPage }: Props) => {
                 >
                     <div className="relative">
                         <div
-                            className="before:absolute before:-top-20 before:-left-20  before:z-[-1] md:before:content-evolvetext">
-                            <img alt="home-page-text" src={HomePageText}/>
+                            className="before:absolute before:-top-20 before:-left-20  before:z-[-1] md:before:content-evolvetext h-72 w-80 overflow-hidden">
+                            <img alt="home-page-text" src={HomePageText} className="w-full h-full object-cover object-center"/>
                         </div>
                     </div>
                     <p className="mt-8 text-sm">
-                        Empowering young Europeans through sports, culture, and international
+                        Empowering Europeans through sports, culture, and international
                         collaboration. Join our community and be part of amazing Erasmus+ projects
                         that connect hearts and minds across borders.
                     </p>

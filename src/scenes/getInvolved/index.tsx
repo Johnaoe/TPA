@@ -48,7 +48,7 @@ const GetInvolved = ({ setSelectedPage }: Props) => {
                     <p className="my-5">
                         Whether you're interested in participating in our beach volleyball tournaments,
                         helping organize events, or developing new Erasmus+ projects, we'd love to hear
-                        from you. Together, we can create more opportunities for young Europeans to connect and grow.
+                        from you. Together, we can create more opportunities for Europeans to connect and grow.
                     </p>
                 </motion.div>
 

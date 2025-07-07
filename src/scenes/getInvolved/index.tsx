@@ -72,7 +72,6 @@ const GetInvolved = ({ setSelectedPage }: Props) => {
                             <input
                                 className={inputStyles}
                                 type="text"
-                                name="name"
                                 placeholder={t('contact.namePlaceholder')}
                                 {...register("name", {
                                     required: true,
@@ -89,7 +88,6 @@ const GetInvolved = ({ setSelectedPage }: Props) => {
                             <input
                                 className={inputStyles}
                                 type="email"
-                                name="email"
                                 placeholder={t('contact.emailPlaceholder')}
                                 {...register("email", {
                                     required: true,
@@ -105,7 +103,6 @@ const GetInvolved = ({ setSelectedPage }: Props) => {
 
                             <textarea
                                 className={inputStyles}
-                                name="message"
                                 placeholder={t('contact.messagePlaceholder')}
                                 rows={4}
                                 cols={50}

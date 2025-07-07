@@ -17,7 +17,16 @@ const Footer = () => {
                 </div>
                 <div className="mt-16 basis-1/4 md:mt-0">
                     <h4 className="font-bold">Our Projects</h4>
-                    <p className="my-5">Beach Volleyball Championships</p>
+                    <p className="my-5">
+                        <a
+                            href="https://instagram.com/beachbros.lt"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary-500 hover:text-secondary-500 underline"
+                        >
+                            Beach Volleyball Championships
+                        </a>
+                    </p>
                     <p className="my-5">Cultural Exchange Programs</p>
                     <p>Youth Leadership Training</p>
                 </div>

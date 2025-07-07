@@ -13,9 +13,9 @@ import Benefit from "./Benefit";
 const benefits: Array<BenefitType> = [
     {
         icon: <UserGroupIcon className="h-6 w-6" />,
-        title: "Connect Across Borders",
+        title: "Bridging Generations",
         description:
-            "Join a vibrant community of Europeans. Build friendships and professional networks that span across multiple countries and cultures.",
+            "We connect young people with older community members, creating opportunities for mutual learning, wisdom sharing, and building stronger, more inclusive .",
     },
     {
         icon: <HomeModernIcon className="h-6 w-6" />,
@@ -60,11 +60,12 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                         visible: { opacity: 1, x: 0 },
                     }}
                 >
-                    <HText>MORE THAN JUST PROJECTS.</HText>
-                    <p className="my-5 text-sm">
-                        We create meaningful connections between people across Europe through
-                        innovative Erasmus+ projects. Our focus on sports and cultural activities
-                        builds lasting friendships and develops essential life skills.
+                    <HText>MORE THAN JUST PROGRAMS.</HText>
+                    <p className="my-5 text-xl">
+                        Tarptautinių Projektų Asociacija (TPA) brings different generations
+                        together through innovative programs focused on healthy lifestyles,
+                        cultural exchange, and community building. We believe in the power
+                        of shared wisdom and intergenerational collaboration.
                     </p>
                 </motion.div>
 

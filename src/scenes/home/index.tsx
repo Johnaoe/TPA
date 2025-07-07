@@ -8,6 +8,7 @@ import SponsorForbes from "@/assets/SponsorForbes.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
 import {motion} from "framer-motion";
 import {Link as ScrollLink} from 'react-scroll';
+import HText from "@/shared/HText.tsx";
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
@@ -38,16 +39,19 @@ const Home = ({ setSelectedPage }: Props) => {
                         visible: {opacity: 1, x: 0},
                     }}
                 >
-                    <div className="relative">
-                        <div
-                            className="before:absolute before:-top-20 before:-left-20  before:z-[-1] md:before:content-evolvetext h-72 w-80 overflow-hidden">
-                            <img alt="home-page-text" src={HomePageText} className="w-full h-full object-cover object-center"/>
-                        </div>
-                    </div>
-                    <p className="mt-8 text-sm">
-                        Empowering Europeans through sports, culture, and international
-                        collaboration. Join our community and be part of amazing Erasmus+ projects
-                        that connect hearts and minds across borders.
+                    {/*<div className="relative">*/}
+                    {/*    <div*/}
+                    {/*        className="before:absolute before:-top-20 before:-left-20  before:z-[-1] md:before:content-evolvetext h-72 w-80 overflow-hidden">*/}
+                    {/*        <img alt="home-page-text" src={HomePageText} className="w-full h-full object-cover object-center"/>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
+                    <HText>
+                        BUILDING BRIDGES BETWEEN{" "}
+                        <span className="text-primary-500">GENERATIONS</span>
+                    </HText>
+                    <p className="mt-8 text-xl">
+                        Empowering communities through healthy habits, intergenerational exchange, and sustainable living.
+                        Join our mission to create healthier, more connected societies.
                     </p>
                 </motion.div>
                 {/* ACTIONS */}

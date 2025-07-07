@@ -3,14 +3,15 @@ import { SelectedPage } from '@/shared/types';
 import { motion } from 'framer-motion';
 import ContactUsPageGraphic from '@/assets/ContactUsPageGraphics.jpg';
 import HText from '@/shared/HText';
+import { useTranslation } from 'react-i18next';
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
 };
 
 const GetInvolved = ({ setSelectedPage }: Props) => {
-    const inputStyles = `mb-5 w-full rounded-lg bg-primary-300
-  px-5 py-3 placeholder-white`;
+    const { t } = useTranslation();
+    const inputStyles = `mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
 
     const {
         register,
@@ -43,12 +44,10 @@ const GetInvolved = ({ setSelectedPage }: Props) => {
                     }}
                 >
                     <HText>
-                        <span className="text-primary-500">READY TO JOIN</span> OUR NEXT PROJECT?
+                        <span className="text-primary-500">{t('contact.title')}</span> {t('contact.titleHighlight')}
                     </HText>
                     <p className="my-5">
-                        Whether you're interested in participating in our beach volleyball tournaments,
-                        helping organize events, or developing new Erasmus+ projects, we'd love to hear
-                        from you. Together, we can create more opportunities for Europeans to connect and grow.
+                        {t('contact.description')}
                     </p>
                 </motion.div>
 
@@ -74,7 +73,7 @@ const GetInvolved = ({ setSelectedPage }: Props) => {
                                 className={inputStyles}
                                 type="text"
                                 name="name"
-                                placeholder="NAME"
+                                placeholder={t('contact.namePlaceholder')}
                                 {...register("name", {
                                     required: true,
                                     maxLength: 100,
@@ -82,9 +81,8 @@ const GetInvolved = ({ setSelectedPage }: Props) => {
                             />
                             {errors.name && (
                                 <p className="mt-1 text-primary-500">
-                                    {errors.name.type === "required" && "This field is required."}
-                                    {errors.name.type === "maxLength" &&
-                                        "Max length is 100 char."}
+                                    {errors.name.type === "required" && t('contact.required')}
+                                    {errors.name.type === "maxLength" && t('contact.maxLength', { count: 100 })}
                                 </p>
                             )}
 
@@ -92,7 +90,7 @@ const GetInvolved = ({ setSelectedPage }: Props) => {
                                 className={inputStyles}
                                 type="email"
                                 name="email"
-                                placeholder="EMAIL"
+                                placeholder={t('contact.emailPlaceholder')}
                                 {...register("email", {
                                     required: true,
                                     pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -100,16 +98,15 @@ const GetInvolved = ({ setSelectedPage }: Props) => {
                             />
                             {errors.email && (
                                 <p className="mt-1 text-primary-500">
-                                    {errors.email.type === "required" &&
-                                        "This field is required."}
-                                    {errors.email.type === "pattern" && "Invalid email address."}
+                                    {errors.email.type === "required" && t('contact.required')}
+                                    {errors.email.type === "pattern" && t('contact.invalidEmail')}
                                 </p>
                             )}
 
                             <textarea
                                 className={inputStyles}
                                 name="message"
-                                placeholder="MESSAGE"
+                                placeholder={t('contact.messagePlaceholder')}
                                 rows={4}
                                 cols={50}
                                 {...register("message", {
@@ -119,10 +116,8 @@ const GetInvolved = ({ setSelectedPage }: Props) => {
                             />
                             {errors.message && (
                                 <p className="mt-1 text-primary-500">
-                                    {errors.message.type === "required" &&
-                                        "This field is required."}
-                                    {errors.message.type === "maxLength" &&
-                                        "Max length is 2000 char."}
+                                    {errors.message.type === "required" && t('contact.required')}
+                                    {errors.message.type === "maxLength" && t('contact.maxLength', { count: 2000 })}
                                 </p>
                             )}
 
@@ -130,7 +125,7 @@ const GetInvolved = ({ setSelectedPage }: Props) => {
                                 type="submit"
                                 className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
                             >
-                                SUBMIT
+                                {t('contact.submitButton')}
                             </button>
                         </form>
                     </motion.div>

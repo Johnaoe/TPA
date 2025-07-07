@@ -1,0 +1,90 @@
+{
+  "navigation": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "programs": "Programs",
+    "getInvolved": "Get Involved",
+    "signIn": "Sign In",
+    "becomeMember": "Join Us"
+  },
+  "hero": {
+    "title": "BUILDING BRIDGES BETWEEN",
+    "titleHighlight": "GENERATIONS",
+    "description": "Empowering communities through healthy habits, intergenerational exchange, and sustainable living. Join our mission to create healthier, more connected societies.",
+    "joinButton": "Join Our Community",
+    "learnMore": "Learn More"
+  },
+  "aboutUs": {
+    "title": "MORE THAN JUST PROJECTS",
+    "description": "Tarptautinių Projektų Asociacija (TPA) brings different generations together through innovative programs focused on healthy lifestyles, cultural exchange, and community building. We believe in the power of shared wisdom and intergenerational collaboration.",
+    "benefit1": {
+      "title": "Bridging Generations",
+      "description": "We connect young people with older community members, creating opportunities for mutual learning, wisdom sharing, and building stronger, more inclusive communities."
+    },
+    "benefit2": {
+      "title": "Active Learning Through Sports",
+      "description": "Experience personal growth through beach volleyball tournaments, outdoor activities, and team-building events that combine fun with learning."
+    },
+    "benefit3": {
+      "title": "Skills for Life",
+      "description": "Develop leadership, communication, and intercultural competencies through hands-on project participation and international collaboration."
+    },
+    "successTitle": "HUNDREDS OF PEOPLE GETTING",
+    "successHighlight": "CONNECTED",
+    "successDescription1": "Since our founding, we've brought together participants from diverse age groups and backgrounds across Lithuania and beyond. Our intergenerational approach has created lasting connections and healthier communities.",
+    "successDescription2": "Through our innovative combination of sports, wellness education, and cultural exchange, participants develop not just healthier habits, but also stronger social connections and mutual understanding across generations.",
+    "joinButton": "Join Our Community"
+  },
+  "programs": {
+    "title": "OUR PROGRAMS",
+    "description": "From volleyball tournaments to mindfulness workshops, we create diverse opportunities for intergenerational learning and healthy living. Each program combines traditional wisdom with modern approaches.",
+    "program1": {
+      "name": "Beach Volleyball Tournament",
+      "description": "Annual international beach volleyball tournaments bringing together young athletes from across Europe. Participants compete, learn, and build lasting friendships while developing their skills and cultural awareness."
+    },
+    "program2": {
+      "name": "Cultural Exchange Weekends",
+      "description": "Intensive weekend programs combining sports activities with cultural workshops. Participants explore different European traditions while engaging in team-building activities."
+    },
+    "program3": {
+      "name": "International Sports Festivals",
+      "description": "Multi-sport festivals celebrating European diversity through athletic competition and cultural celebration. These events showcase the power of sports to unite people across borders."
+    },
+    "program4": {
+      "name": "Community Outreach Programs",
+      "description": "Local community engagement projects that bring international participants together with local youth. These programs focus on social inclusion and community development through sports."
+    },
+    "program5": {
+      "name": "Wellness Workshops",
+      "description": "Intergenerational workshops combining traditional wellness wisdom with modern health practices. Learn mindfulness, nutrition, and sustainable living together."
+    },
+    "program6": {
+      "name": "Healthy Habits Training",
+      "description": "Comprehensive programs focusing on building sustainable healthy habits across all age groups, emphasizing the connection between physical and mental well-being."
+    }
+  },
+  "contact": {
+    "title": "READY TO JOIN",
+    "titleHighlight": "OUR NEXT PROJECT?",
+    "description": "Whether you're interested in participating in our beach volleyball tournaments, helping organize events, or developing new intergenerational programs, we'd love to hear from you. Together, we can create more opportunities for healthy living and meaningful connections.",
+    "namePlaceholder": "NAME",
+    "emailPlaceholder": "EMAIL",
+    "messagePlaceholder": "MESSAGE",
+    "submitButton": "SUBMIT",
+    "required": "This field is required.",
+    "maxLength": "Max length is {{count}} char.",
+    "invalidEmail": "Invalid email address."
+  },
+  "footer": {
+    "description": "Building bridges between generations through innovative programs focused on healthy lifestyles, cultural exchange, and community building. We create opportunities for intergenerational learning and meaningful connections.",
+    "programs": "Our Programs",
+    "program1": "Beach Volleyball Championships",
+    "program2": "Cultural Exchange Programs",
+    "program3": "Wellness Workshops",
+    "getInvolved": "Get Involved",
+    "getInvolvedDescription": "Ready to join our next project or organize an event?",
+    "email": "info@tarptautiniaiprojektai.lt",
+    "copyright": "© TPA - Tarptautinių Projektų Asociacija. All rights reserved.",
+    "euFunding": "This project has been funded with support from the European Commission."
+  }
+}

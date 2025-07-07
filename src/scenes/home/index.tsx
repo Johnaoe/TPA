@@ -9,17 +9,19 @@ import SponsorFortune from "@/assets/SponsorFortune.png";
 import {motion} from "framer-motion";
 import {Link as ScrollLink} from 'react-scroll';
 import HText from "@/shared/HText.tsx";
+import { useTranslation } from 'react-i18next';
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
 };
 
 const Home = ({ setSelectedPage }: Props) => {
+    const { t } = useTranslation();
     const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
     return <section
-    id="home"
-    className="gap-16 bg-gray-20 py-10 md:h-full mb:pb-0"
+        id="home"
+        className="gap-16 bg-gray-20 py-10 md:h-full mb:pb-0"
     >
         {/* IMAGE AND MAIN HEADER*/}
         <motion.div
@@ -39,19 +41,12 @@ const Home = ({ setSelectedPage }: Props) => {
                         visible: {opacity: 1, x: 0},
                     }}
                 >
-                    {/*<div className="relative">*/}
-                    {/*    <div*/}
-                    {/*        className="before:absolute before:-top-20 before:-left-20  before:z-[-1] md:before:content-evolvetext h-72 w-80 overflow-hidden">*/}
-                    {/*        <img alt="home-page-text" src={HomePageText} className="w-full h-full object-cover object-center"/>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
                     <HText>
-                        BUILDING BRIDGES BETWEEN{" "}
-                        <span className="text-primary-500">GENERATIONS</span>
+                        {t('hero.title')}{" "}
+                        <span className="text-primary-500">{t('hero.titleHighlight')}</span>
                     </HText>
                     <p className="mt-8 text-xl">
-                        Empowering communities through healthy habits, intergenerational exchange, and sustainable living.
-                        Join our mission to create healthier, more connected societies.
+                        {t('hero.description')}
                     </p>
                 </motion.div>
                 {/* ACTIONS */}
@@ -66,7 +61,9 @@ const Home = ({ setSelectedPage }: Props) => {
                         visible: {opacity: 1, x: 0},
                     }}
                 >
-                    <ActionButton setSelectedPage={setSelectedPage}>Join Our Community</ActionButton>
+                    <ActionButton setSelectedPage={setSelectedPage}>
+                        {t('hero.joinButton')}
+                    </ActionButton>
                     <ScrollLink
                         className="text-sm font-bold text-primary-500 underline hover:text-secondary-500 cursor-pointer"
                         to={SelectedPage.GetInvolved}
@@ -74,7 +71,7 @@ const Home = ({ setSelectedPage }: Props) => {
                         duration={500}
                         onClick={() => setSelectedPage(SelectedPage.GetInvolved)}
                     >
-                        <p>Learn More</p>
+                        <p>{t('hero.learnMore')}</p>
                     </ScrollLink>
                 </motion.div>
             </div>

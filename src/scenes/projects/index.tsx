@@ -1,53 +1,62 @@
-import { SelectedPage } from '@/shared/types.ts';
+import { SelectedPage } from '@/shared/types';
 import image1 from '@/assets/image1.jpg';
 import image2 from '@/assets/image2.jpg';
 import image3 from '@/assets/image3.jpg';
 import image4 from '@/assets/image4.jpg';
 import image5 from '@/assets/image5.jpg';
 import image6 from '@/assets/image6.jpg';
-import { motion } from 'framer-motion'
-import type { ClassType } from "react";
+import { motion } from 'framer-motion';
 import HText from "@/shared/HText";
 import Class from "./Class";
+import { useTranslation } from 'react-i18next';
 
-const projects: Array<ClassType> = [
-    {
-        name: "Beach Volleyball Tournament",
-        description:
-            "Annual international beach volleyball tournaments bringing together athletes from across Europe. Participants compete, learn, and build lasting friendships while developing their skills and cultural awareness.",
-        image: image1,
-    },
-    {
-        name: "Cultural Exchange Weekends",
-        image: image2,
-    },
-    {
-        name: "International Sports Festivals",
-        description:
-            "Multi-sport festivals celebrating European diversity through athletic competition and cultural celebration. These events showcase the power of sports to unite people across borders.",
-        image: image3,
-    },
-    {
-        name: "Community Outreach Programs",
-        description:
-            "Local community engagement projects that bring international participants together with local youth. These programs focus on social inclusion and community development through sports.",
-        image: image4,
-    },
-    {
-        name: "Community",
-        image: image5,
-    },
-    {
-        name: "Training Classes",
-        image: image6,
-    },
-];
+// Define ClassType locally
+interface ClassType {
+    name: string;
+    description?: string;
+    image: string;
+}
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Projects = ({ setSelectedPage }: Props) => {
+const Programs = ({ setSelectedPage }: Props) => {
+    const { t } = useTranslation();
+
+    const projects: Array<ClassType> = [
+        {
+            name: t('programs.program1.name'),
+            description: t('programs.program1.description'),
+            image: image1,
+        },
+        {
+            name: t('programs.program2.name'),
+            description: t('programs.program2.description'),
+            image: image2,
+        },
+        {
+            name: t('programs.program3.name'),
+            description: t('programs.program3.description'),
+            image: image3,
+        },
+        {
+            name: t('programs.program4.name'),
+            description: t('programs.program4.description'),
+            image: image4,
+        },
+        {
+            name: t('programs.program5.name'),
+            description: t('programs.program5.description'),
+            image: image5,
+        },
+        {
+            name: t('programs.program6.name'),
+            description: t('programs.program6.description'),
+            image: image6,
+        },
+    ];
+
     return (
         <section id="programs" className="w-full bg-primary-100 py-40">
             <motion.div
@@ -65,20 +74,17 @@ const Projects = ({ setSelectedPage }: Props) => {
                     }}
                 >
                     <div className="md:w-3/5">
-                        <HText>OUR PROJECTS</HText>
+                        <HText>{t('programs.title')}</HText>
                         <p className="py-5">
-                            From beach volleyball tournaments to cultural exchange programs, we're
-                            constantly developing new ways to bring Europeans together. Each
-                            project combines sports, learning, and cultural exchange to create
-                            unforgettable experiences.
+                            {t('programs.description')}
                         </p>
                     </div>
                 </motion.div>
                 <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
-                    <ul className="w-[2800px] whitespace-nowrap">
+                    <ul className="w-[2800px] whitespace-nowrap" key={t('programs.title')}>
                         {projects.map((item: ClassType, index) => (
                             <Class
-                                key={`${item.name}-${index}`}
+                                key={`program-${index}`}
                                 name={item.name}
                                 description={item.description}
                                 image={item.image}
@@ -91,4 +97,4 @@ const Projects = ({ setSelectedPage }: Props) => {
     );
 };
 
-export default Projects;
+export default Programs;

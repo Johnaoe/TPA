@@ -9,27 +9,7 @@ import {
 import { motion } from "framer-motion";
 import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.jpg";
 import Benefit from "./Benefit";
-
-const benefits: Array<BenefitType> = [
-    {
-        icon: <UserGroupIcon className="h-6 w-6" />,
-        title: "Bridging Generations",
-        description:
-            "We connect young people with older community members, creating opportunities for mutual learning, wisdom sharing, and building stronger, more inclusive .",
-    },
-    {
-        icon: <HomeModernIcon className="h-6 w-6" />,
-        title: "Active Learning Through Sports",
-        description:
-            "Experience personal growth through beach volleyball tournaments, outdoor activities, and team-building events that combine fun with learning.",
-    },
-    {
-        icon: <AcademicCapIcon className="h-6 w-6" />,
-        title: "Skills for Life",
-        description:
-            "Develop leadership, communication, and intercultural competencies through hands-on project participation and international collaboration.",
-    },
-];
+import { useTranslation } from 'react-i18next';
 
 const container = {
     hidden: {},
@@ -43,6 +23,26 @@ type Props = {
 };
 
 const AboutUs = ({ setSelectedPage }: Props) => {
+    const { t } = useTranslation();
+
+    const benefits: Array<BenefitType> = [
+        {
+            icon: <UserGroupIcon className="h-6 w-6" />,
+            title: t('aboutUs.benefit1.title'),
+            description: t('aboutUs.benefit1.description'),
+        },
+        {
+            icon: <HomeModernIcon className="h-6 w-6" />,
+            title: t('aboutUs.benefit2.title'),
+            description: t('aboutUs.benefit2.description'),
+        },
+        {
+            icon: <AcademicCapIcon className="h-6 w-6" />,
+            title: t('aboutUs.benefit3.title'),
+            description: t('aboutUs.benefit3.description'),
+        },
+    ];
+
     return (
         <section id="aboutus" className="mx-auto min-h-full w-5/6 py-20">
             <motion.div
@@ -60,12 +60,9 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                         visible: { opacity: 1, x: 0 },
                     }}
                 >
-                    <HText>MORE THAN JUST PROGRAMS.</HText>
+                    <HText>{t('aboutUs.title')}</HText>
                     <p className="my-5 text-xl">
-                        Tarptautinių Projektų Asociacija (TPA) brings different generations
-                        together through innovative programs focused on healthy lifestyles,
-                        cultural exchange, and community building. We believe in the power
-                        of shared wisdom and intergenerational collaboration.
+                        {t('aboutUs.description')}
                     </p>
                 </motion.div>
 
@@ -76,10 +73,11 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
                     variants={container}
+                    key={t('aboutUs.title')} // Force re-render when language changes
                 >
-                    {benefits.map((benefit: BenefitType) => (
+                    {benefits.map((benefit: BenefitType, index) => (
                         <Benefit
-                            key={benefit.title}
+                            key={`benefit-${index}`} // Use stable index-based key
                             icon={benefit.icon}
                             title={benefit.title}
                             description={benefit.description}
@@ -115,8 +113,8 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                                     }}
                                 >
                                     <HText>
-                                        HUNDREDS OF PEOPLE GETTING{" "}
-                                        <span className="text-primary-500">CONNECTED</span>
+                                        {t('aboutUs.successTitle')}{" "}
+                                        <span className="text-primary-500">{t('aboutUs.successHighlight')}</span>
                                     </HText>
                                 </motion.div>
                             </div>
@@ -134,16 +132,10 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                             }}
                         >
                             <p className="my-5">
-                                Since our founding, we've brought together participants from over 15 European
-                                countries. Our beach volleyball events have become a cornerstone of youth sports
-                                exchange, creating lasting friendships and professional networks that extend far
-                                beyond the tournament days.
+                                {t('aboutUs.successDescription1')}
                             </p>
                             <p className="mb-5">
-                                Through our innovative approach to combining sports with cultural exchange,
-                                participants develop not just athletic skills, but also language abilities,
-                                cultural awareness, and leadership capabilities. Every event is designed to
-                                break down barriers and build bridges between Europeans.
+                                {t('aboutUs.successDescription2')}
                             </p>
                         </motion.div>
 
@@ -151,7 +143,7 @@ const AboutUs = ({ setSelectedPage }: Props) => {
                         <div className="relative mt-16">
                             <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
                                 <ActionButton setSelectedPage={setSelectedPage}>
-                                    Join Our Community
+                                    {t('aboutUs.joinButton')}
                                 </ActionButton>
                             </div>
                         </div>

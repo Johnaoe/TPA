@@ -3,88 +3,88 @@
     "home": "Pradžia",
     "aboutUs": "Apie mus",
     "programs": "Programos",
-    "getInvolved": "Prisijunk",
+    "getInvolved": "Įsitrauk",
     "signIn": "Prisijungti",
-    "becomeMember": "Tapti nariu"
+    "becomeMember": "Prisijunk prie mūsų"
   },
   "hero": {
     "title": "KURIAME TILTUS TARP",
     "titleHighlight": "KARTŲ",
-    "description": "Stipriname bendruomenes per sveikus įpročius, tarptautinį bendradarbiavimą ir tvarų gyvenimą. Prisijunk prie mūsų misijos kurti sveikesnes ir labiau susijusias bendruomenes.",
-    "joinButton": "Prisijunk",
+    "description": "Įgaliname bendruomenes per sveikus įpročius, kartų dialogą ir tvarų gyvenimo būdą. Junkis prie mūsų misijos kurti sveikesnes ir glaudesnes visuomenes.",
+    "joinButton": "Prisijunk prie bendruomenės",
     "learnMore": "Sužinok daugiau"
   },
   "aboutUs": {
     "title": "DAUGIAU NEI TIK PROJEKTAI",
-    "description": "Tarptautinių Projektų Asociacija (TPA) jungia skirtingas kartas per inovatyvias programas, sutelktas į sveiką gyvenimo būdą, kultūrų mainus ir bendruomenės kūrimą. Tikime bendros išminties ir tarpkartinio bendradarbiavimo jėga.",
+    "description": "Tarptautinių Projektų Asociacija (TPA) jungia skirtingas kartas per novatoriškas programas, orientuotas į sveiką gyvenimo būdą, kultūrinį bendravimą ir bendruomenės stiprinimą. Tikime dalijimosi išmintimi ir kartų bendradarbiavimo galia.",
     "benefit1": {
-      "title": "Kartų suvienijimas",
-      "description": "Sujungiame jaunus žmones su vyresniais bendruomenės nariais, kurdami galimybes abipusiam mokymosi, išminties dalinimuisi ir stipresnių, labiau įtraukiančių bendruomenių kūrimui."
+      "title": "Jungiame Kartas",
+      "description": "Jungiame jaunimą ir vyresniuosius bendruomenės narius, kuriame erdvę abipusiam mokymuisi, išminties dalijimuisi ir tvirtesnių, atviresnių bendruomenių kūrimui."
     },
     "benefit2": {
-      "title": "Aktyvus mokymasis per sportą",
-      "description": "Patirk asmeninį augimą per paplūdimio tinklinio turnyrus, lauko veiklas ir komandos formavimo renginius, kurie sujungia malonumą su mokymusi."
+      "title": "Aktyvus Mokymasis per Sportą",
+      "description": "Augimo patirtis per paplūdimio tinklinio turnyrus, veiklas gamtoje ir komandinius užsiėmimus, kur mokymasis dera su malonumu."
     },
     "benefit3": {
-      "title": "Gyvenimo įgūdžiai",
-      "description": "Ugdyk lyderystės, komunikacijos ir tarptautinius gebėjimus per praktinį dalyvavimą projektuose ir tarptautinį bendradarbiavimą."
+      "title": "Gyvenimo Įgūdžiai",
+      "description": "Ugdykite lyderystės, bendravimo ir tarpkultūrines kompetencijas dalyvaudami praktiniuose projektuose ir tarptautinėse iniciatyvose."
     },
-    "successTitle": "ŠIMTAI ŽMONIŲ",
-    "successHighlight": "SUSIJUNGIA",
-    "successDescription1": "Nuo įkūrimo, suvienijome dalyvius iš įvairių amžiaus grupių ir aplinkų visoje Lietuvoje ir už jos ribų. Mūsų tarpkartinis požiūris sukūrė tvarius ryšius ir sveikesnes bendruomenes.",
-    "successDescription2": "Per inovatyvų sporto, sveikatos švietimo ir kultūrų mainų derinį, dalyviai ugdo ne tik sveikesnius įpročius, bet ir stipresnius socialinius ryšius bei abipusį supratimą tarp kartų.",
-    "joinButton": "Prisijunk prie mūsų"
+    "successTitle": "ŠIMTAI ŽMONIŲ KURIA",
+    "successHighlight": "RYŠĮ",
+    "successDescription1": "Nuo pat įkūrimo suburiame įvairaus amžiaus ir skirtingų patirčių žmones iš visos Lietuvos ir už jos ribų. Mūsų kartų dialogo metodas padeda kurti ilgalaikius ryšius ir sveikesnes bendruomenes.",
+    "successDescription2": "Per sporto, sveikatingumo ir kultūrinio bendravimo derinį dalyviai ugdo ne tik sveikus įpročius, bet ir stiprina socialinius ryšius bei tarpusavio supratimą tarp kartų.",
+    "joinButton": "Prisijunk prie bendruomenės"
   },
   "programs": {
     "title": "MŪSŲ PROGRAMOS",
-    "description": "Nuo tinklinio turnyrų iki sąmoningumo seminarų, kuriame įvairias galimybes tarpkartiniam mokymuisi ir sveikam gyvenimui. Kiekviena programa sujungia tradicinę išmintį su šiuolaikiniais metodais.",
+    "description": "Nuo tinklinio turnyrų iki sąmoningumo dirbtuvių – kuriame įvairias galimybes kartų mokymuisi ir sveikam gyvenimui. Kiekvienoje programoje jungiame tradicinę išmintį ir šiuolaikinius metodus.",
     "program1": {
-      "name": "Paplūdimio tinklinio turnyrai",
-      "description": "Metiniai tarptautiniai paplūdimio tinklinio turnyre, suvienijantys jaunus sportininkus iš visos Europos. Dalyviai varžosi, mokosi ir kuria ilgalaikius draugystės ryšius."
+      "name": "Paplūdimio Tinklinio Turnyras",
+      "description": "Kasmetiniai tarptautiniai paplūdimio tinklinio turnyrai, suburiantys jaunus sportininkus iš visos Europos. Dalyviai ne tik varžosi, bet ir mokosi bei kuria tvirtas draugystes, plėsdami savo kultūrinį akiratį."
     },
     "program2": {
-      "name": "Kultūrų mainų savaitgaliai",
-      "description": "Intensyvūs savaitgalio programos, sujungiančios sporto veiklas su kultūros seminarais. Dalyviai tyrinėja skirtingas europietiškas tradicijas."
+      "name": "Kultūrinių Mainų Savaitgaliai",
+      "description": "Intensyvios savaitgalio programos, kuriose sportas derinamas su kultūrinėmis dirbtuvėmis. Dalyviai tyrinėja įvairias Europos tradicijas ir stiprina komandinius įgūdžius."
     },
     "program3": {
-      "name": "Tarptautiniai sporto festivaliai",
-      "description": "Daugiašakės sporto šventės, švenčiančios Europos įvairovę per sportinį varžymąsi ir kultūros celebraciją. Šie renginiai atskleidžia sporto galią suvienyti žmones."
+      "name": "Tarptautiniai Sporto Festivaliai",
+      "description": "Daugiadiscipliniai sporto festivaliai, švenčiantys Europos įvairovę per sportą ir kultūrą. Renginiai, kurie parodo, kaip sportas gali suvienyti skirtingus žmones."
     },
     "program4": {
-      "name": "Bendruomenės programos",
-      "description": "Vietinės bendruomenės įsitraukimo projektai, sujungiantys tarptautinius dalyvius su vietiniais jaunais žmonėmis. Programos orientuotos į socialinį įtraukimą."
+      "name": "Bendruomenės Iniciatyvos",
+      "description": "Vietos bendruomenių projektai, kuriuose tarptautiniai dalyviai susitinka su vietiniu jaunimu. Programos skatina socialinę įtrauktį ir bendruomenių stiprinimą per sportą."
     },
     "program5": {
-      "name": "Sveikatos seminarai",
-      "description": "Tarpkartiniai seminarai, sujungiantys tradicinę sveikatos išmintį su šiuolaikinėmis sveikatos praktikomis. Mokykitės sąmoningumo, mitybos ir tvaraus gyvenimo."
+      "name": "Sveikatingumo Dirbtuvės",
+      "description": "Kartų dirbtuvės, kuriose jungiama tradicinė sveikatos išmintis ir šiuolaikiniai sveiko gyvenimo būdo principai. Kartu mokomės sąmoningumo, mitybos ir tvaraus gyvenimo."
     },
     "program6": {
-      "name": "Sveikų įpročių mokymai",
-      "description": "Išsamios programos, orientuotos į tvarių sveikų įpročių formavimą visose amžiaus grupėse, pabrėžiant fizinio ir psichinio sveikatos ryšį."
+      "name": "Sveikų Įpročių Mokymai",
+      "description": "Išsamios programos, skirtos sveikų ir tvarių įpročių formavimui visose amžiaus grupėse, pabrėžiant fizinės ir emocinės sveikatos ryšį."
     }
   },
   "contact": {
-    "title": "PASIRUOŠĘ PRISIJUNGTI PRIE",
-    "titleHighlight": "MŪSŲ KITO PROJEKTO?",
-    "description": "Nesvarbu, ar norėtumėte dalyvauti mūsų paplūdimio tinklinio turnyruose, padėti organizuoti renginius, ar plėtoti naujus tarpkartinius projektus - norėtume išgirsti iš jūsų. Kartu galime sukurti daugiau galimybių sveikam gyvenimui ir prasmingiems ryšiams.",
+    "title": "PASIRUOŠĘS PRISIJUNGTI",
+    "titleHighlight": "PRIE KITO PROJEKTO?",
+    "description": "Nesvarbu, ar nori dalyvauti paplūdimio tinklinio turnyruose, padėti organizuoti renginius ar kurti naujas kartų programas – lauksime tavo žinutės. Kartu galime sukurti dar daugiau galimybių sveikam gyvenimui ir prasmingiems ryšiams.",
     "namePlaceholder": "VARDAS",
     "emailPlaceholder": "EL. PAŠTAS",
     "messagePlaceholder": "ŽINUTĖ",
     "submitButton": "SIŲSTI",
-    "required": "Šis laukas yra privalomas.",
-    "maxLength": "Maksimalus ilgis yra {{count}} simbolių.",
+    "required": "Šis laukelis yra privalomas.",
+    "maxLength": "Didžiausias ilgis – {{count}} simbolių.",
     "invalidEmail": "Neteisingas el. pašto adresas."
   },
   "footer": {
-    "description": "Kuriame tiltus tarp kartų per inovatyvias programas, sutelktas į sveiką gyvenimo būdą, kultūrų mainus ir bendruomenės kūrimą. Suteikiame galimybes tarpkartiniam mokymui ir prasmingiems ryšiams.",
-    "programs": "Mūsų programos",
-    "program1": "Paplūdimio tinklinio čempionatai",
-    "program2": "Kultūrų mainų programos",
-    "program3": "Sveikatos seminarai",
-    "getInvolved": "Prisijunk",
-    "getInvolvedDescription": "Pasiruošę prisijungti prie mūsų kito projekto ar organizuoti renginį?",
+    "description": "Kuriame tiltus tarp kartų per inovatyvias programas, kurios skatina sveiką gyvenimo būdą, kultūrinį bendravimą ir bendruomeniškumą. Kuriame erdves kartų mokymuisi ir prasmingiems ryšiams.",
+    "programs": "Mūsų Programos",
+    "program1": "Paplūdimio Tinklinio Čempionatai",
+    "program2": "Kultūrinių Mainų Programos",
+    "program3": "Sveikatingumo Dirbtuvės",
+    "getInvolved": "Įsitrauk",
+    "getInvolvedDescription": "Nori prisijungti prie kito mūsų projekto ar padėti organizuoti renginį?",
     "email": "info@tarptautiniaiprojektai.lt",
     "copyright": "© TPA - Tarptautinių Projektų Asociacija. Visos teisės saugomos.",
-    "euFunding": "Šis projektas finansuotas remiant Europos Komisijai."
+    "euFunding": "Šį projektą finansuoja Europos Komisija."
   }
 }

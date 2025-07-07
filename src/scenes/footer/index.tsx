@@ -28,7 +28,16 @@ const Footer = () => {
                             {t('footer.program1')}
                         </a>
                     </p>
-                    <p className="my-5">{t('footer.program2')}</p>
+                    <p className="my-5">
+                        <a
+                            href="https://www.instagram.com/tarptautiniaiprojektai/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary-500 hover:text-secondary-500 underline"
+                        >
+                            {t('footer.program2')}
+                        </a>
+                    </p>
                     <p>{t('footer.program3')}</p>
                 </div>
                 <div className="mt-16 basis-1/4 md:mt-0">

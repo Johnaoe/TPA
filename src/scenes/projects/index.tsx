@@ -81,10 +81,6 @@ const Programs = ({ setSelectedPage }: Props) => {
         visible: {
             opacity: 1,
             y: 0,
-            transition: {
-                duration: 0.5,
-                ease: "easeOut",
-            },
         },
     };
 
@@ -174,6 +170,7 @@ const Programs = ({ setSelectedPage }: Props) => {
                                     key={`program-${index}`}
                                     variants={itemVariants}
                                     className="w-full"
+                                    transition={{ duration: 0.5, ease: "easeOut" }}
                                 >
                                     <Class
                                         name={item.name}

@@ -1,6 +1,4 @@
-import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import { Link as ScrollLink } from 'react-scroll';
 import type { ReactElement } from 'react';
 
 const childVariant = {
@@ -12,32 +10,26 @@ type Props = {
     icon: ReactElement;
     title: string;
     description: string;
-    setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {
+const Benefit = ({ icon, title, description }: Props) => {
     return (
         <motion.div
             variants={childVariant}
-            className="mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center"
+            className="mt-5 rounded-md border-2 border-gray-100 px-5 py-8 text-center h-80 flex flex-col justify-between"
         >
-            <div className="mb-4 flex justify-center">
-                <div className="rounded-full border-2 border-gray-100 bg-primary-100 p-4">
-                    {icon}
+            <div className="flex flex-col items-center flex-grow">
+                <div className="mb-4 flex justify-center">
+                    <div className="rounded-full border-2 border-gray-100 bg-primary-100 p-4">
+                        {icon}
+                    </div>
                 </div>
-            </div>
 
-            <h4 className="font-bold">{title}</h4>
-            <p className="my-3">{description}</p>
-            <ScrollLink
-                to={SelectedPage.GetInvolved}
-                smooth={true}
-                duration={500}
-                className="text-sm font-bold text-primary-500 underline hover:text-secondary-500 cursor-pointer"
-                onClick={() => setSelectedPage(SelectedPage.GetInvolved)}
-            >
-                <p>Learn More</p>
-            </ScrollLink>
+                <h4 className="font-bold text-lg mb-4">{title}</h4>
+                <p className="text-gray-600 leading-relaxed flex-grow flex items-center">
+                    {description}
+                </p>
+            </div>
         </motion.div>
     );
 };

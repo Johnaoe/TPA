@@ -16,7 +16,7 @@ const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
         if (pageName === "Programs") return SelectedPage.Programs;
         if (pageName === "Get Involved") return SelectedPage.GetInvolved;
 
-        // Lithuanian mappings
+        // Lithuanian mappings - fixed encoding
         if (pageName === "Pradžia") return SelectedPage.Home;
         if (pageName === "Apie mus") return SelectedPage.AboutUs;
         if (pageName === "Programos") return SelectedPage.Programs;
@@ -33,8 +33,8 @@ const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
             to={targetSection}
             smooth={true}
             duration={500}
-            className={`${selectedPage === targetSection ? "text-primary-500" : ""}
-            transition duration-500 hover:text-primary-300 cursor-pointer
+            className={`${selectedPage === targetSection ? "text-primary-500 font-semibold" : "text-gray-600"}
+            transition duration-300 hover:text-primary-400 cursor-pointer font-medium
             `}
             onClick={() => setSelectedPage(targetSection)}
         >

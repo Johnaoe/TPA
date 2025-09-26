@@ -15,20 +15,18 @@
     "learnMore": "Sužinok daugiau"
   },
   "aboutUs": {
-    "title": "DAUGIAU NEI TIK PROJEKTAI",
-    "description": "Tarptautinių Projektų Asociacija (TPA) jungia skirtingas kartas per inovatyvias programas, orientuotas į sveiką gyvenimo būdą, kultūrinį bendravimą ir bendruomenės stiprinimą. Tikime dalijimosi išmintimi ir kartų bendradarbiavimo galia.",
+    "title": "ŠIMTAI ŽMONIŲ KURIA NAUJUS RYŠIUS",
+    "description": "",
     "benefit1": {
-      "title": "Jungiame Kartas",
-      "description": "Sujungiame jaunus žmones su vyresniais bendruomenės nariais, kurdami galimybes abipusiam mokymuisi, išminties dalinimuisi ir stipresnių, labiau įtraukiančių bendruomenių kūrimui."
+      "title": "Bendruomenės Stiprinimas",
+      "description": "Sujungiame jaunus žmones su vyresniais bendruomenės nariais, kurdami galimybes abipusiam mokymuisi, išminties dalijimui ir stipresnių, labiau įtraukiančių bendruomenių kūrimui."
     },
     "benefit2": {
-      "title": "Aktyvus Mokymasis per Sportą",
-      "description": "Augimo patirtis per paplūdimio tinklinio turnyrus, veiklas gamtoje ir komandinius užsiėmimus, kur mokymasis dera su malonumu."
-    },
+      "title": "Kūrybinis Mokymasis",
+      "description": "Praktinis mokymasis per įvairias veiklas - nuo sporto varžybų iki tradicinių amatų dirbtuvių. Čia žinios įgyjamos ne iš knygų, o per tikrą patirtį, eksperimentus ir kūrybinę veiklą."},
     "benefit3": {
-      "title": "Gyvenimo Įgūdžiai",
-      "description": "Ugdykite lyderystės, komunikacijos ir tarptautinius gebėjimus per praktinį dalyvavimą projektuose ir tarptautinėse iniciatyvose."
-    },
+      "title": "Praktinių Įgūdžių Ugdymas",
+      "description": "Kuriame unikalias erdves, kur skirtingų kartų žmonės gali susitikti, dalintis patirtimi ir kartu mokytis vieni iš kitų. Jaunimas gauna vertingų gyvenimo pamokų, o vyresnieji - šviežių idėjų ir energijos." },
     "successTitle": "ŠIMTAI ŽMONIŲ KURIA NAUJUS",
     "successHighlight": "RYŠIUS",
     "successDescription1": "Nuo pat įkūrimo suburiame įvairaus amžiaus ir skirtingų patirčių žmones iš visos Lietuvos ir už jos ribų. Mūsų kartų dialogo metodai padeda kurti ilgalaikius ryšius ir sveikesnes bendruomenes.",
@@ -36,37 +34,69 @@
     "joinButton": "Prisijunk prie bendruomenės"
   },
   "programs": {
-    "title": "MŪSŲ PROGRAMOS",
-    "description": "Nuo tinklinio turnyrų iki sąmoningumo dirbtuvių – kuriame įvairias galimybes tarpkartiniam mokymuisi ir sveikam gyvenimui. Kiekvienoje programoje jungiame tradicinę išmintį ir šiuolaikinius metodus.",
-    "program1": {
-      "name": "Paplūdimio Tinklinio Turnyrai",
-      "description": "Tarptautiniai paplūdimio tinklinio turnyrai, suburiantys jaunus sportininkus iš visos Europos. Dalyviai ne tik varžosi, bet ir mokosi bei kuria tvirtas draugystes, plėsdami savo kultūrinį akiratį."
+    "title": "DAUGIAU NEI TIK PROJEKTAI",
+    "subtitle": "",
+    "description": "Tarptautinių Projektų Asociacija (TPA) jungia skirtingas kartas per inovatyvias programas, orientuotas į sveiką gyvenimo būdą, kultūrinį bendravimą ir bendruomenės stiprinimą. Tikime dalijimosi išmintimi ir kartų bendradarbiavimo galia.",
+    "aboutProject": "Apie šią veiklą",
+    "activities": "Projekto veiklos",
+    "location": "Vieta",
+    "partners": "Partneriai",
+    "getInvolved": "Prisijunk prie projekto",
+    "learnMore": "Sužinok daugiau",
+    "keyBenefits": "Pagrindinės veiklos nauda",
+    "activity1": {
+      "name": "Tradicinių Patiekalų Gaminimo Dirbtuvės",
+      "description": "Išmokite karaimų kulinarijos paslapčių iš patyrusių virtuvės šefų ir perduokite šias žinias jaunajai kartai.",
+      "details": "Praktinės dirbtuvės, kuriose šimtmečiais puoselėtos karaimų virtuvės tradicijos perduodamos tiesiogiai iš rankų į rankas. Sužinosite apie kibininės ir kitų tradicinių patiekalų kultūrinę reikšmę, išmoksite naudoti šviežius vietinius produktus ir taikyti tvaraus maisto gamybos principus.",
+      "location": "Kybynlar, Trakai",
+      "benefits": "Kultūros išsaugojimas|Kartų ryšių stiprinimas|Kulinarijos meistriškumas|Tvaraus ūkininkavimo principai",
+      "partners": "Kybynlar restoranas"
     },
-    "program2": {
-      "name": "Kultūrinių Mainų Savaitgaliai",
-      "description": "Intensyvios savaitgalio programos, kuriose sportas derinamas su kultūrinėmis dirbtuvėmis. Dalyviai tyrinėja įvairias Europos tradicijas ir stiprina komandinius įgūdžius."
+    "activity2": {
+      "name": "Žirgų Terapija",
+      "description": "Atraskite žirgų terapijos gydomąją galią ir sustiprinkite ryšį su gamta nuostabiajame Trakų krašte.",
+      "details": "Individualizuoti žirgų terapijos seansai, kurie skatina emocinę pusiausvyrą, gerina fizinę koordinaciją ir stiprina pasitikėjimą savimi aplink gyvūnus. Kvalifikuoti instruktoriai padės jums saugiai ir produktyviai bendrauti su žirgais gamtos aplinkoje, derindami terapinius metodus su gamtos pažinimu.",
+      "location": "Sky Riders Jojimo Klubas, Trakai",
+      "benefits": "Psichologinė savijauta|Fizinė koordinacija|Pasitikėjimo stiprinimas|Ryšys su gamta",
+      "partners": "Sky Riders Jojimo Klubas"
     },
-    "program3": {
-      "name": "Tarptautiniai Sporto Festivaliai",
-      "description": "Daugiadiscipliniai sporto festivaliai, švenčiantys Europos įvairovę per sportą ir kultūrą. Renginiai, kurie parodo, kaip sportas gali suvienyti skirtingus žmones."
+    "activity3": {
+      "name": "Lietuvos Totorių Kultūros Lobiai",
+      "description": "Pasinerkite į unikalų Lietuvos totorių bendruomenės kultūros paveldą per autentiškas veiklas ir susitikimus su bendruomenės nariais.",
+      "details": "Išskirtinė galimybė pažinti vieną seniausių Lietuvos etninių mažumų - totorių bendruomenę. Dalyvaukite tradicinės virtuvės, liaudies medicinos ir amatų dirbtuvėse, klausykitės tikrų gyvenimo istorijų ir sužinokite, kaip totorių kultūra praturtino Lietuvos paveldą.",
+      "location": "Lietuvos totorių kultūros centras, Trakai",
+      "benefits": "Kultūrų dialogas|Tradicinių žinių perdavimas|Bendruomeniškumo stiprinimas|Istorinės atminties puoselėjimas",
+      "partners": "Lietuvos totorių bendruomenės organizacijos"
     },
-    "program4": {
-      "name": "Bendruomenės Iniciatyvos",
-      "description": "Vietos bendruomenių projektai, kuriuose tarptautiniai dalyviai susitinka su vietiniu jaunimu. Programos skatina socialinę įtrauktį ir bendruomenių stiprinimą."
+    "activity4": {
+      "name": "Gamtos Tyrinėjimas ir Sveikatingumo Veiklos",
+      "description": "Atraskite gamtos grožį per aktyvias veiklas, kurios stiprina fizinę ir psichikos sveikatą.",
+      "details": "Miško terapijos seansai, ekologinio sodininkavimo praktikos ir žolininkystės pagrindų mokymasis. Tyrinėkite vietinius augalus ir gyvūnus kartu su patyrusiais gamtos žinovais bei tradiciniais žolinininkais.",
+      "location": "Trakų regiono gamtos centrai",
+      "benefits": "Gamtos pažinimas|Streso mažinimas|Tradicinės žolininkystės žinios|Fizinis aktyvumas",
+      "partners": "Vietiniai gamtos ir sveikatingumo centrai"
     },
-    "program5": {
-      "name": "Sveikatingumo Dirbtuvės",
-      "description": "Kartų dirbtuvės, kuriose jungiama tradicinė sveikatos išmintis ir šiuolaikiniai sveiko gyvenimo būdo principai. Kartu mokomės sąmoningumo, mitybos ir tvaraus gyvenimo."
+    "activity5": {
+      "name": "Amatinio Šokolado Dirbtuvės",
+      "description": "Kurkite sveikus šokolado skanumynus iš kokybiškai atrinktų ingredientų kartu su patyriais šokolado meisteriais.",
+      "details": "Praktinės dirbtuvės, kuriose mokysitės gaminti šokoladą nuo kakavos pupelių iki gatavo produkto. Sužinosite apie kokybės ingredientų svarbą, tradicines šokolado gamybos technikas ir sveikos mitybos principus desertų kūrime.",
+      "location": "AJ Šokolado dirbtuvės",
+      "benefits": "Amatiniai įgūdžiai|Sveikos mitybos žinios|Kūrybinis mąstymas|Kokybės suvokimas",
+      "partners": "AJ Šokoladas ir vietiniai konditeriai"
     },
-    "program6": {
-      "name": "Sveikų Įpročių Mokymai",
-      "description": "Išsamios programos, skirtos sveikų ir tvarių įpročių formavimui visose amžiaus grupėse, pabrėžiant fizinės ir emocinės sveikatos ryšį."
+    "activity6": {
+      "name": "Trakų Istorijos ir Gamtos Pažintis",
+      "description": "Sujunkite Trakų istorijos tyrinėjimą su aktyviu poilsiu gamtos aplinkoje ir vandens sportu.",
+      "details": "Interaktyvūs istorijos turai po Trakų pilis, tradicinių amatų dirbtuvės ir aktyvios veiklos. Dalyvaukite valtimis plaukiojime, žygiais po Trakų nacionalinį parką ir istorijos pasakojimų seansose prie laužo.",
+      "location": "Trakų istorinis nacionalinis parkas ir aplinkiniai ežerai",
+      "benefits": "Istorinės žinios|Fizinis aktyvumas|Gamtos pažinimas|Komandos darbas",
+      "partners": "Trakų krašto tradicinių amatų centras"
     }
   },
   "contact": {
     "title": "PASIRUOŠĘ PRISIJUNGTI PRIE",
     "titleHighlight": "MŪSŲ KITO PROJEKTO?",
-    "description": "Nesvarbu, ar nori dalyvauti paplūdimio tinklinio turnyruose, padėti organizuoti renginius ar kurti naujas kartų programas – lauksime tavo žinutės. Kartu galime sukurti dar daugiau galimybių sveikam gyvenimui ir prasmingiems ryšiams.",
+    "description": "Nesvarbu, ar nori dalyvauti sporto veiklose, dalyvauti projektuose ar padėti organizuoti renginius – lauksime tavo žinutės. Kartu galime sukurti dar daugiau galimybių!",
     "namePlaceholder": "VARDAS",
     "emailPlaceholder": "EL. PAŠTAS",
     "messagePlaceholder": "ŽINUTĖ",
@@ -78,7 +108,7 @@
   "footer": {
     "description": "Kuriame tiltus tarp kartų per inovatyvias programas, kurios skatina sveiką gyvenimo būdą, kultūrinį bendravimą ir bendruomeniškumą. Kuriame erdves kartų mokymuisi ir prasmingiems ryšiams.",
     "programs": "Mūsų Programos",
-    "program1": "Paplūdimio Tinklinio Čempionatai",
+    "program1": "Paplūdimio Tinklinio varžybos",
     "program2": "Kultūrinių Mainų Programos",
     "program3": "Sveikatingumo Dirbtuvės",
     "getInvolved": "Prisijunk",

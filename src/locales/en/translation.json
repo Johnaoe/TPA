@@ -5,86 +5,118 @@
     "programs": "Programs",
     "getInvolved": "Get Involved",
     "signIn": "Sign In",
-    "becomeMember": "Join Us"
+    "becomeMember": "Become Member"
   },
   "hero": {
-    "title": "BUILDING BRIDGES BETWEEN",
+    "title": "CONNECTING",
     "titleHighlight": "GENERATIONS",
-    "description": "Empowering communities through healthy habits, intergenerational exchange, and sustainable living. Join our mission to create healthier, more connected societies.",
-    "joinButton": "Join Our Community",
+    "description": "Strengthening communities through intergenerational dialogue, healthy habits and sustainable lifestyle. Join our mission to create healthier and closer communities.",
+    "joinButton": "Join Us",
     "learnMore": "Learn More"
   },
   "aboutUs": {
-    "title": "MORE THAN JUST PROJECTS",
-    "description": "Tarptautinių Projektų Asociacija (TPA) brings different generations together through innovative programs focused on healthy lifestyles, cultural exchange, and community building. We believe in the power of shared wisdom and intergenerational collaboration.",
+    "title": "HUNDREDS OF PEOPLE CREATE NEW CONNECTIONS",
+    "description": "",
     "benefit1": {
-      "title": "Bridging Generations",
-      "description": "We connect young people with older community members, creating opportunities for mutual learning, wisdom sharing, and building stronger, more inclusive communities."
+      "title": "Community Strengthening",
+      "description": "We bring together young people with older community members, creating opportunities for mutual learning, wisdom sharing and building stronger, more inclusive communities."
     },
     "benefit2": {
-      "title": "Active Learning Through Sports",
-      "description": "Experience personal growth through beach volleyball tournaments, outdoor activities, and team-building events that combine fun with learning."
+      "title": "Creative Learning",
+      "description": "Practical learning through various activities - from sports competitions to traditional craft workshops. Knowledge is gained not from books, but through real experience."
     },
     "benefit3": {
-      "title": "Skills for Life",
-      "description": "Develop leadership, communication, and intercultural competencies through hands-on project participation and international collaboration."
+      "title": "Practical Skills Development",
+      "description": "We create unique spaces where people of different generations can meet, share experiences and learn from each other. Young people gain valuable life lessons, while elders receive fresh ideas and energy."
     },
-    "successTitle": "HUNDREDS OF PEOPLE GETTING",
-    "successHighlight": "CONNECTED",
-    "successDescription1": "Since our founding, we've brought together participants from diverse age groups and backgrounds across Lithuania and beyond. Our intergenerational approach has created lasting connections and healthier communities.",
-    "successDescription2": "Through our innovative combination of sports, wellness education, and cultural exchange, participants develop not just healthier habits, but also stronger social connections and mutual understanding across generations.",
-    "joinButton": "Join Our Community"
+    "successTitle": "HUNDREDS OF PEOPLE CREATE NEW",
+    "successHighlight": "CONNECTIONS",
+    "successDescription1": "Since our founding, we have brought together people of various ages and different experiences from all over Lithuania and beyond. Our intergenerational dialogue methods help create long-term relationships and healthier communities.",
+    "successDescription2": "Through the combination of sports, wellness and cultural exchange, participants develop not only healthier habits, but also stronger social connections and mutual understanding between generations.",
+    "joinButton": "Join the Community"
   },
   "programs": {
-    "title": "OUR PROGRAMS",
-    "description": "From volleyball tournaments to mindfulness workshops, we create diverse opportunities for intergenerational learning and healthy living. Each program combines traditional wisdom with modern approaches.",
-    "program1": {
-      "name": "Beach Volleyball Tournament",
-      "description": "Annual international beach volleyball tournaments bringing together young athletes from across Europe. Participants compete, learn, and build lasting friendships while developing their skills and cultural awareness."
+    "title": "MORE THAN JUST PROJECTS",
+    "subtitle": "",
+    "description": "International Projects Association (TPA) connects different generations through innovative programs focused on healthy lifestyle, cultural exchange and community strengthening. We believe in the power of sharing wisdom and intergenerational collaboration.",
+    "aboutProject": "About this activity",
+    "activities": "Project activities",
+    "location": "Location",
+    "partners": "Partners",
+    "getInvolved": "Join the project",
+    "learnMore": "Learn more",
+    "keyBenefits": "Key Activity Benefits",
+    "activity1": {
+      "name": "Traditional Dish Cooking Workshops",
+      "description": "Learn the secrets of Karaim cuisine from experienced chefs and pass this knowledge to the younger generation.",
+      "details": "Hands-on workshops where centuries-old Karaim culinary traditions are passed directly from hand to hand. You will learn about the cultural significance of kibinai and other traditional dishes, learn to use fresh local products and apply sustainable food production principles.",
+      "location": "Kybynlar, Trakai",
+      "benefits": "Cultural preservation|Strengthening intergenerational bonds|Culinary mastery|Sustainable farming principles",
+      "partners": "Kybynlar restaurant"
     },
-    "program2": {
-      "name": "Cultural Exchange Weekends",
-      "description": "Intensive weekend programs combining sports activities with cultural workshops. Participants explore different European traditions while engaging in team-building activities."
+    "activity2": {
+      "name": "Equestrian Therapy",
+      "description": "Discover the healing power of equestrian therapy and strengthen your connection with nature in the beautiful Trakai region.",
+      "details": "Individualized equestrian therapy sessions that promote emotional balance, improve physical coordination and build confidence around animals. Qualified instructors will help you safely and productively interact with horses in a natural environment, combining therapeutic methods with nature discovery.",
+      "location": "Sky Riders Riding Club, Trakai",
+      "benefits": "Psychological well-being|Physical coordination|Confidence building|Connection with nature",
+      "partners": "Sky Riders Riding Club"
     },
-    "program3": {
-      "name": "International Sports Festivals",
-      "description": "Multi-sport festivals celebrating European diversity through athletic competition and cultural celebration. These events showcase the power of sports to unite people across borders."
+    "activity3": {
+      "name": "Lithuanian Tatar Cultural Treasures",
+      "description": "Immerse yourself in the unique cultural heritage of Lithuania's Tatar community through authentic activities and meetings with community members.",
+      "details": "An exclusive opportunity to get to know one of Lithuania's oldest ethnic minorities - the Tatar community. Participate in traditional cooking, folk medicine and craft workshops, listen to real life stories and learn how Tatar culture enriched Lithuania's heritage.",
+      "location": "Lithuanian Tatar Cultural Center, Trakai",
+      "benefits": "Cultural dialogue|Traditional knowledge transfer|Community strengthening|Historical memory preservation",
+      "partners": "Lithuanian Tatar community organizations"
     },
-    "program4": {
-      "name": "Community Outreach Programs",
-      "description": "Local community engagement projects that bring international participants together with local youth. These programs focus on social inclusion and community development through sports."
+    "activity4": {
+      "name": "Nature Exploration and Wellness Activities",
+      "description": "Discover the beauty of nature through active pursuits that strengthen physical and mental health.",
+      "details": "Forest therapy sessions, ecological gardening practices and learning the basics of herbalism. Explore local plants and animals together with experienced nature experts and traditional herbalists.",
+      "location": "Trakai region nature centers",
+      "benefits": "Nature knowledge|Stress reduction|Traditional herbalism knowledge|Physical activity",
+      "partners": "Local nature and wellness centers"
     },
-    "program5": {
-      "name": "Wellness Workshops",
-      "description": "Intergenerational workshops combining traditional wellness wisdom with modern health practices. Learn mindfulness, nutrition, and sustainable living together."
+    "activity5": {
+      "name": "Artisan Chocolate Workshops",
+      "description": "Create healthy chocolate treats from quality-selected ingredients together with experienced chocolate masters.",
+      "details": "Hands-on workshops where you'll learn to make chocolate from cocoa beans to finished product. You'll learn about the importance of quality ingredients, traditional chocolate-making techniques and healthy nutrition principles in dessert creation.",
+      "location": "AJ Chocolate workshops",
+      "benefits": "Artisan skills|Healthy nutrition knowledge|Creative thinking|Quality appreciation",
+      "partners": "AJ Chocolate and local confectioners"
     },
-    "program6": {
-      "name": "Healthy Habits Training",
-      "description": "Comprehensive programs focusing on building sustainable healthy habits across all age groups, emphasizing the connection between physical and mental well-being."
+    "activity6": {
+      "name": "Trakai History and Nature Discovery",
+      "description": "Combine Trakai history exploration with active recreation in natural surroundings and water sports.",
+      "details": "Interactive history tours of Trakai castles, traditional craft workshops and active activities. Participate in boating, hiking through Trakai National Park and storytelling sessions around the campfire.",
+      "location": "Trakai Historical National Park and surrounding lakes",
+      "benefits": "Historical knowledge|Physical activity|Nature discovery|Teamwork",
+      "partners": "Trakai Regional Traditional Crafts Center"
     }
   },
   "contact": {
     "title": "READY TO JOIN",
     "titleHighlight": "OUR NEXT PROJECT?",
-    "description": "Whether you're interested in participating in our beach volleyball tournaments, helping organize events, or developing new intergenerational programs, we'd love to hear from you. Together, we can create more opportunities for healthy living and meaningful connections.",
+    "description": "Whether you want to participate in sports activities, take part in projects or help organize events - we look forward to your message. Together we can create even more opportunities!",
     "namePlaceholder": "NAME",
     "emailPlaceholder": "EMAIL",
     "messagePlaceholder": "MESSAGE",
-    "submitButton": "SUBMIT",
+    "submitButton": "SEND",
     "required": "This field is required.",
-    "maxLength": "Max length is {{count}} char.",
+    "maxLength": "Maximum length is {{count}} characters.",
     "invalidEmail": "Invalid email address."
   },
   "footer": {
-    "description": "Building bridges between generations through innovative programs focused on healthy lifestyles, cultural exchange, and community building. We create opportunities for intergenerational learning and meaningful connections.",
+    "description": "We build bridges between generations through innovative programs that promote healthy lifestyles, cultural exchange and community spirit. We create spaces for intergenerational learning and meaningful connections.",
     "programs": "Our Programs",
-    "program1": "Beach Volleyball Championships",
+    "program1": "Beach Volleyball Competitions",
     "program2": "Cultural Exchange Programs",
     "program3": "Wellness Workshops",
     "getInvolved": "Get Involved",
-    "getInvolvedDescription": "Ready to join our next project or organize an event?",
+    "getInvolvedDescription": "Want to join our next project or help organize an event?",
     "email": "info@tarptautiniaiprojektai.lt",
-    "copyright": "© TPA - Tarptautinių Projektų Asociacija. All rights reserved.",
-    "euFunding": "This project has been funded with support from the European Commission."
+    "copyright": "© TPA - International Projects Association. All rights reserved.",
+    "euFunding": "This project is funded by the European Commission."
   }
 }

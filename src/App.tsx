@@ -32,8 +32,8 @@ function App() {
                 setSelectedPage={setSelectedPage}
             />
             <Home setSelectedPage={setSelectedPage}/>
-            <AboutUs setSelectedPage={setSelectedPage}/>
             <Projects setSelectedPage={setSelectedPage}/>
+            <AboutUs setSelectedPage={setSelectedPage}/>
             <GetInvolved setSelectedPage={setSelectedPage}/>
             <Footer />
         </div>

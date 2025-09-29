@@ -83,46 +83,29 @@ const Class = ({ name, description, image, index, onLearnMore }: Props) => {
 
             {/* Content */}
             <div className="absolute inset-0 p-6 flex flex-col justify-end text-white z-10 pointer-events-none">
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.1 }}
-                >
+                <div>
                     <h3 className="text-xl font-bold mb-3 leading-tight">
                         {name}
                     </h3>
-                    <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        whileInView={{ opacity: 1, height: 'auto' }}
-                        transition={{ duration: 0.3, delay: 0.2 }}
-                    >
-                        <p className="text-sm leading-relaxed text-gray-200 group-hover:text-white transition-colors duration-300 mb-4">
-                            {description}
-                        </p>
-                    </motion.div>
-                </motion.div>
+                    <p className="text-sm leading-relaxed text-gray-200 group-hover:text-white transition-colors duration-200 mb-4">
+                        {description}
+                    </p>
+                </div>
 
-                {/* Learn More Indicator */}
-                <motion.div
-                    className="flex items-center text-primary-300 opacity-0 group-hover:opacity-100 transition-all duration-300"
-                    initial={{ x: -10 }}
-                    whileInView={{ x: 0 }}
-                    transition={{ duration: 0.3, delay: 0.3 }}
-                >
-                    <span className="text-sm font-medium">
-                        {t('programs.learnMore', { defaultValue: 'Learn more' })}
-                    </span>
-                    <motion.svg
-                        className="w-4 h-4 ml-2"
+                {/* Learn More Indicator - Simplified */}
+                <div className="flex items-center text-primary-300 opacity-0 group-hover:opacity-100 transition-all duration-200">
+        <span className="text-sm font-medium">
+            {t('programs.learnMore', { defaultValue: 'Learn more' })}
+        </span>
+                    <svg
+                        className="w-4 h-4 ml-2 transition-transform duration-200 group-hover:translate-x-1"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
-                        whileHover={{ x: 3 }}
-                        transition={{ type: "spring", stiffness: 400, damping: 17 }}
                     >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </motion.svg>
-                </motion.div>
+                    </svg>
+                </div>
             </div>
 
             {/* Corner accent */}

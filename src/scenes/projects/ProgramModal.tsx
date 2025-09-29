@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 type Props = {
     isOpen: boolean;
@@ -16,6 +16,7 @@ type Props = {
 
 const ProgramModal = ({ isOpen, onClose, program, onGetInvolved }: Props) => {
     const { t } = useTranslation();
+    const [imageLoaded, setImageLoaded] = useState(false);
 
     // Lock body scroll when modal is open
     useEffect(() => {
@@ -38,6 +39,13 @@ const ProgramModal = ({ isOpen, onClose, program, onGetInvolved }: Props) => {
         document.addEventListener('keydown', handleEsc);
         return () => document.removeEventListener('keydown', handleEsc);
     }, [onClose]);
+
+    // Reset image loaded state when program changes
+    useEffect(() => {
+        if (program) {
+            setImageLoaded(false);
+        }
+    }, [program]);
 
     if (!program) return null;
 
@@ -70,8 +78,8 @@ const ProgramModal = ({ isOpen, onClose, program, onGetInvolved }: Props) => {
     const modalVariants = {
         hidden: {
             opacity: 0,
-            scale: 0.8,
-            y: 50
+            scale: 0.95,
+            y: 20
         },
         visible: {
             opacity: 1,
@@ -80,20 +88,16 @@ const ProgramModal = ({ isOpen, onClose, program, onGetInvolved }: Props) => {
         },
         exit: {
             opacity: 0,
-            scale: 0.8,
-            y: 50
+            scale: 0.95,
+            y: 20
         }
     };
 
     const contentVariants = {
-        hidden: { opacity: 0, y: 20 },
+        hidden: { opacity: 0, y: 10 },
         visible: {
             opacity: 1,
-            y: 0,
-            transition: {
-                delay: 0.2,
-                duration: 0.5
-            }
+            y: 0
         }
     };
 
@@ -106,15 +110,17 @@ const ProgramModal = ({ isOpen, onClose, program, onGetInvolved }: Props) => {
                     initial="hidden"
                     animate="visible"
                     exit="hidden"
+                    transition={{ duration: 0.2 }}
                     onClick={onClose}
                 >
                     {/* Backdrop */}
-                    <div className="absolute inset-0 bg-black/80 backdrop-blur-sm"/>
+                    <div className="absolute inset-0 bg-black/80"/>
 
                     {/* Modal */}
                     <motion.div
                         className="relative w-full max-w-6xl h-[90vh] max-h-[90vh] bg-white rounded-2xl overflow-hidden shadow-2xl flex flex-col"
                         variants={modalVariants}
+                        transition={{ type: "spring", duration: 0.4, bounce: 0.1 }}
                         onClick={(e) => e.stopPropagation()}
                     >
                         {/* Close Button */}
@@ -131,22 +137,42 @@ const ProgramModal = ({ isOpen, onClose, program, onGetInvolved }: Props) => {
 
                         <div className="flex flex-col lg:flex-row h-full min-h-0">
                             {/* Image Section */}
-                            <div className="lg:w-1/2 h-64 lg:h-auto relative">
+                            <div className="lg:w-1/2 h-64 lg:h-auto relative bg-gray-200">
+                                {/* Loading placeholder */}
+                                {!imageLoaded && (
+                                    <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
+                                        <div className="animate-pulse flex flex-col items-center">
+                                            <div className="w-16 h-16 bg-gray-300 rounded-full mb-4"></div>
+                                            <div className="w-24 h-4 bg-gray-300 rounded"></div>
+                                        </div>
+                                    </div>
+                                )}
+
                                 <img
                                     src={program.image}
                                     alt={program.name}
-                                    className="w-full h-full object-cover"
+                                    className={`w-full h-full object-cover transition-opacity duration-300 ${
+                                        imageLoaded ? 'opacity-100' : 'opacity-0'
+                                    }`}
+                                    onLoad={() => setImageLoaded(true)}
+                                    loading="eager"
                                 />
                                 <div
                                     className="absolute inset-0 bg-gradient-to-r from-transparent to-black/20 lg:to-black/40"/>
                             </div>
 
-                            {/* Content Section */}
+                            {/* Content Section - Show immediately without waiting for image */}
                             <motion.div
-                                className="lg:w-1/2 p-4 md:p-6 lg:p-8 overflow-y-auto max-h-full"
+                                className="lg:w-1/2 p-4 md:p-6 lg:p-8 overflow-y-scroll max-h-full"
+                                style={{
+                                    WebkitOverflowScrolling: 'touch',
+                                    scrollbarWidth: 'thin',
+                                    willChange: 'scroll-position'
+                                }}
                                 variants={contentVariants}
                                 initial="hidden"
                                 animate="visible"
+                                transition={{ duration: 0.3 }}
                             >
                                 <div className="space-y-6">
                                     {/* Title */}
@@ -236,7 +262,7 @@ const ProgramModal = ({ isOpen, onClose, program, onGetInvolved }: Props) => {
                                     </div>
 
                                     {/* CTA Button */}
-                                    <div className="pt-6 border-t border-gray-200">
+                                    <div className="pt-4 md:pt-6 border-t border-gray-200">
                                         <button
                                             type="button"
                                             onClick={handleGetInvolved}

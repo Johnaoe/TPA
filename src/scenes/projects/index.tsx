@@ -132,68 +132,35 @@ const Programs = ({ setSelectedPage }: Props) => {
     };
 
     return (
-        <>
-            <section id="programs" className="w-full bg-primary-100 pt-8 md:pt-12 pb-12 md:pb-20">
-                <motion.div
-                    onViewportEnter={() => setSelectedPage(SelectedPage.Programs)}
-                >
-                    <motion.div
-                        className="mx-auto w-5/6"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{once: true, amount: 0.5}}
-                        transition={{duration: 0.5}}
-                        variants={{
-                            hidden: {opacity: 0, x: -50},
-                            visible: {opacity: 1, x: 0},
-                        }}
-                    >
-                        <div className="md:w-3/5 mb-8 md:mb-12">
-                            <HText>{t('programs.title')}</HText>
-                            <p className="py-5 text-lg">
-                                {t('programs.description')}
-                            </p>
-                        </div>
-                    </motion.div>
+        <section id="programs" className="w-full bg-primary-100 pt-8 md:pt-12 pb-12 md:pb-20">
+            <div className="mx-auto w-5/6">
+                <div className="md:w-3/5 mb-8 md:mb-12">
+                    <HText>{t('programs.title')}</HText>
+                    <p className="py-5 text-lg">{t('programs.description')}</p>
+                </div>
 
-                    {/* Grid Layout for Programs */}
-                    <motion.div
-                        className="mx-auto w-5/6"
-                        variants={containerVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{once: true, amount: 0.2}}
-                    >
-                        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-                            {projects.map((item: ClassType, index) => (
-                                <motion.div
-                                    key={`program-${index}`}
-                                    variants={itemVariants}
-                                    className="w-full"
-                                    transition={{ duration: 0.5, ease: "easeOut" }}
-                                >
-                                    <Class
-                                        name={item.name}
-                                        description={item.description}
-                                        image={item.image}
-                                        index={index}
-                                        onLearnMore={handleLearnMore}
-                                    />
-                                </motion.div>
-                            ))}
+                <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+                    {projects.map((item, index) => (
+                        <div key={`program-${index}`} className="w-full">
+                            <Class
+                                name={item.name}
+                                description={item.description}
+                                image={item.image}
+                                index={index}
+                                onLearnMore={handleLearnMore}
+                            />
                         </div>
-                    </motion.div>
-                </motion.div>
-            </section>
+                    ))}
+                </div>
+            </div>
 
-            {/* Program Detail Modal */}
             <ProgramModal
                 isOpen={isModalOpen}
                 onClose={handleCloseModal}
                 program={selectedProgram}
                 onGetInvolved={handleGetInvolved}
             />
-        </>
+        </section>
     );
 };
 
